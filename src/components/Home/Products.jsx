@@ -40,7 +40,7 @@ const Products = () => {
     //     </div>
     // );
     return (
-        <div>
+        <div className=" container mx-auto px-4">
             <h2 className="text-4xl font-bold">Our Apparels</h2>
             <div className="grid grid-cols-4 gap-5">
                 <ProductCard />
