@@ -1,0 +1,46 @@
+[
+  {
+    "category": "Woman Apparel",
+    "name": "Woman Apparel",
+    "price": {
+      "min": 1000,
+      "max": 10000
+    },
+    "image": "https://www.bdwear.com/wp-content/uploads/2024/05/Womens-Clothing-Manufacturer-Bangladesh-1024x935.jpg",
+    "description": "Premium quality women apparel made with comfortable fabric and modern design. Suitable for everyday and formal use.",
+    "stock": 50
+  },
+  {
+    "category": "Man Apparel",
+    "name": "Man Apparel",
+    "price": {
+      "min": 1200,
+      "max": 15000
+    },
+    "image": "https://apparelsourcebd.com/wp-content/uploads/2023/02/Men-2-scaled-500x300.jpg",
+    "description": "Stylish and durable men's apparel crafted with high quality fabric for daily and office wear.",
+    "stock": 60
+  },
+  {
+    "category": "Sports Wear",
+    "name": "Sports Wear",
+    "price": {
+      "min": 800,
+      "max": 12000
+    },
+    "image": "https://img.joomcdn.net/8c2aaaa67d0b23d1be76905b485019d0902bd9fa_original.jpeg",
+    "description": "Lightweight and breathable sportswear designed for gym, running and active lifestyle.",
+    "stock": 100
+  },
+  {
+    "category": "Nightwear",
+    "name": "Nightwear",
+    "price": {
+      "min": 700,
+      "max": 9000
+    },
+    "image": "https://images.jdmagicbox.com/v2/comp/def_content/ncat_id/nightwear-lv7chb3-250.jpg",
+    "description": "Soft and comfortable nightwear made for relaxing and peaceful sleep.",
+    "stock": 40
+  }
+]

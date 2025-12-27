@@ -6,7 +6,7 @@ const Categories = () => {
     return (
         <div>
             <CategoryBanner/>
-            <div className="py-14 px-4 relative -mt-[100px] ">
+            <div className="py-14 px-4 relative -mt-[120px] ">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
 
@@ -22,7 +22,7 @@ const Categories = () => {
                         ))}
 
                         {/* Empty column to push next row to center (XL only) */}
-                        <div className="hidden xl:block"></div>
+                        {/* <div className="hidden xl:block"></div> */}
 
                         {/* Second row: centered 3 cards */}
                         {categoriesData.slice(4).map((item, index) => (
@@ -35,7 +35,6 @@ const Categories = () => {
                                 />
                             </div>
                         ))}
-
                     </div>
                 </div>
             </div>
