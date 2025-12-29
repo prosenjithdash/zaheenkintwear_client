@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useEffect, useState } from "react";
 import app from "../firebase/firebase.config";
 import {
     GoogleAuthProvider,
@@ -24,7 +24,7 @@ const AuthProvider = ({ children }) => {
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
-    const signIn = (email, password) => {
+    const signInUser = (email, password) => {
         setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
@@ -46,14 +46,14 @@ const AuthProvider = ({ children }) => {
         })
     }
 
-    const logOut = async () => {
+    const logOut = () => {
         setLoading(true)
         return signOut(auth)
     }
 
     // Firebase Auth State Change Listener
     useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, async currentUser => {
+        const unsubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser)
             setLoading(false)
         })
@@ -68,7 +68,7 @@ const AuthProvider = ({ children }) => {
         setLoading,
         createUser,
         signInWithGoogle,
-        signIn,
+        signInUser,
         resetPassword,
         updateUserProfile,
         logOut
