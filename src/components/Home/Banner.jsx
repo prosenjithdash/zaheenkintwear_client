@@ -112,6 +112,7 @@ const Banner = () => {
                 </div>
             </div>
 
+            
 
             {/* BRAND LOGOS (static, responsive) */}
             <div className="py-24">
