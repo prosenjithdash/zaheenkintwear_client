@@ -46,6 +46,11 @@ const AuthProvider = ({ children }) => {
         })
     }
 
+    const logOut = async () => {
+        setLoading(true)
+        return signOut(auth)
+    }
+
     // Firebase Auth State Change Listener
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, async currentUser => {
@@ -66,6 +71,7 @@ const AuthProvider = ({ children }) => {
         signIn,
         resetPassword,
         updateUserProfile,
+        logOut
     }
     return (
         <AuthContext.Provider
