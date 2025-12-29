@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <footer className="bg-[#F7F7F7]  mt-16">
             {/* Top Footer */}
-            <div className="container mx-auto px-4 py-12">
+            <div className="max-w-7xl mx-auto px-4 py-12">
                 <div className="flex flex-col lg:flex-row justify-between gap-10">
 
                     {/* Left part of footer */}

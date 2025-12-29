@@ -17,7 +17,7 @@ const Products = () => {
     }, []);
 
     return (
-        <div className="container mx-auto px-4 py-12">
+        <div className="max-w-7xl mx-auto px-4 ">
             <h2 className="text-4xl font-bold mb-8">
                 Our Apparels
             </h2>

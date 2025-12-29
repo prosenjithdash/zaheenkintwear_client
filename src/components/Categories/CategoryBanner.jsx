@@ -5,7 +5,7 @@ const CategoryBanner = () => {
     return (
         <section className="bg-[#07B4B01A] ">
             <div className="
-                max-w-9xl mx-auto
+                max-w-7xl mx-auto
                 px-4
                 py-[80px] sm:py-[110px] lg:py-[150px]
                 
