@@ -7,13 +7,13 @@ const CartProvider = ({ children }) => {
 
     // Load cart count
     useEffect(() => {
-        fetch("http://localhost:8000/cart")
+        fetch(`${import.meta.env.VITE_API_URL}/cart`)
             .then(res => res.json())
             .then(data => setCartCount(data.reduce((sum, item) => sum + item.quantity, 0)));
     }, []);
 
     const addToCart = (product) => {
-        fetch("http://localhost:8000/cart", {
+        fetch(`${import.meta.env.VITE_API_URL}/cart`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
