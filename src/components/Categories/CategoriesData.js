@@ -1,32 +1,32 @@
 const categoriesData = [
     {
         name: "Dyeing",
-        icon: "/src/assets/categoryIcons/dyeing.png",
+        icon: "https://ibb.co.com/PvkgK0jZ",
         description: "Adding color to biodegradable materials"
     },
     {
         name: "Cutting",
-        icon: "/src/assets/categoryIcons/cutting.png",
+        icon: "https://ibb.co.com/0ydd2J4B",
         description: "Eco-friendly clothing items for all shapes and sizes"
     },
     {
         name: "Sewing",
-        icon: "/src/assets/categoryIcons/sewing.png",
+        icon: "https://ibb.co.com/PsZJX47Q",
         description: "Vouching for the ultimate sturdiness and durability of the fabric"
     },
     {
         name: "Snipping of thread",
-        icon: "/src/assets/categoryIcons/snipping.png",
+        icon: "https://ibb.co.com/S7dhpV3n",
         description: "A neat edge, a soft and smooth finish"
     },
     {
         name: "Ironing",
-        icon: "/src/assets/categoryIcons/ironing.png",
+        icon: "https://ibb.co.com/BHd6TqsQ",
         description: "Ironing it before shipping"
     },
     {
         name: "Checking",
-        icon: "/src/assets/categoryIcons/checking.png",
+        icon: "https://ibb.co.com/SwSH5jx8",
         description: "Going through each clothing piece to ensure supreme quality standards are met"
     }
     // {
