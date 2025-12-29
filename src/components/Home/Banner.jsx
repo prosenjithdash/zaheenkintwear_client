@@ -118,12 +118,12 @@ const Banner = () => {
             <div className="py-24">
                 <div className="max-w-7xl mx-auto flex flex-wrap justify-center lg:justify-between gap-6 sm:gap-10 px-4">
 
-                    <img src={img1} className="h-8 sm:h-10 lg:h-8 object-contain" alt="" />
-                    <img src={img2} className="h-8 sm:h-10 lg:h-8 object-contain" alt="" />
-                    <img src={img3} className="h-8 sm:h-10 lg:h-8 object-contain" alt="" />
-                    <img src={img4} className="h-8 sm:h-10 lg:h-8 object-contain" alt="" />
-                    <img src={img1} className="h-8 sm:h-10 lg:h-8 object-contain" alt="" />
-                    <img src={img2} className="h-8 sm:h-10 lg:h-8 object-contain" alt="" />
+                    <img src='https://ibb.co.com/5gSby0rR' className="h-8 sm:h-10 lg:h-8 object-contain" alt="" />
+                    <img src='https://ibb.co.com/BHM1HGjS' className="h-8 sm:h-10 lg:h-8 object-contain" alt="" />
+                    <img src='https://ibb.co.com/JRCN0PQp' className="h-8 sm:h-10 lg:h-8 object-contain" alt="" />
+                    <img src='https://ibb.co.com/4wDdnjJ4' className="h-8 sm:h-10 lg:h-8 object-contain" alt="" />
+                    <img src='https://ibb.co.com/5gSby0rR' className="h-8 sm:h-10 lg:h-8 object-contain" alt="" />
+                    <img src='https://ibb.co.com/BHM1HGjS' className="h-8 sm:h-10 lg:h-8 object-contain" alt="" />
 
                 </div>
             </div>
