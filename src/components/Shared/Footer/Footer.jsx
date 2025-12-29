@@ -16,7 +16,7 @@ const Footer = () => {
 
                     {/* Left part of footer */}
                     <div>
-                        <img src="/src/assets/zk-logo.png" alt="Company Logo" className="h-10 mb-4" />
+                        <img src="https://ibb.co.com/7dFJ7jD1" alt="Company Logo" className="h-10 mb-4" />
 
                         <div className="flex gap-3 text-sm text-gray-600 mb-3">
                             <FaMapMarkerAlt className="mt-1 text-gray-500" />
@@ -71,20 +71,21 @@ const Footer = () => {
                     </h3>
 
                     <div className="flex flex-wrap gap-10">
-                        <img src="/src/assets/payment-logo/visa.png" alt="Visa" className="h-8" />
-                        <img src="/src/assets/payment-logo/mastercard.png" alt="Mastercard" className="h-8" />
-                        <img src="/src/assets/payment-logo/nogod.png" alt="nogod" className="h-8" />
-                        <img src="/src/assets/payment-logo/bkash.png" alt="Bkash" className="h-8" />
-                        <img src="/src/assets/payment-logo/roket.png" alt="Rocket" className="h-8" />
-                        <img src="/src/assets/payment-logo/upay.jpg" alt="Upay" className="h-8" />
-                        <img src="/src/assets/payment-logo/siorcash.jpg" alt="Siorcash" className="h-8" />
-                        <img src="/src/assets/payment-logo/taptap.png" alt="Tap" className="h-8" />
-                        <img src="/src/assets/payment-logo/cell.png" alt="Cell" className="h-8" />
-                        <img src="/src/assets/payment-logo/duch.png" alt="DuchBangla Bank" className="h-8" />
-                        <img src="/src/assets/payment-logo/citybank.png" alt="City Bank" className="h-8" />
-                        <img src="/src/assets/payment-logo/islamibank.png" alt="Islami Bank" className="h-8" />
-                        <img src="/src/assets/payment-logo/brack.png" alt="Brack" className="h-8" />
-                        <img src="/src/assets/payment-logo/ucb.png" alt="UCB" className="h-8" />
+                        <img src="https://ibb.co.com/LdwM7Ccc" alt="Visa" className="h-8" />
+                        <img src="https://ibb.co.com/SDTLpsgr" alt="Mastercard" className="h-8" />
+                        <img src="https://ibb.co.com/yn4cnm5d" alt="nogod" className="h-8" />
+                        <img src="https://ibb.co.com/p655Q460" alt="Bkash" className="h-8" />
+                        <img src="https://ibb.co.com/tpG6j918" alt="Rocket" className="h-8" />
+
+                        <img src="https://ibb.co.com/jv2nLY7J" alt="Upay" className="h-8" />
+                        <img src="https://ibb.co.com/0yGwzPCm" alt="Siorcash" className="h-8" />
+                        <img src="https://ibb.co.com/LVbHTj9" alt="Tap" className="h-8" />
+                        <img src="https://ibb.co.com/spPzMFvJ" alt="Cell" className="h-8" />
+                        <img src="https://ibb.co.com/FL3bgTb3" alt="DuchBangla Bank" className="h-8" />
+                        <img src="https://ibb.co.com/BHS0GvTC" alt="City Bank" className="h-8" />
+                        <img src="https://ibb.co.com/rRVbvQws" alt="Islami Bank" className="h-8" />
+                        <img src="https://ibb.co.com/QvvqxfgH" alt="Brack" className="h-8" />
+                        <img src="https://ibb.co.com/Q77x81fP" alt="UCB" className="h-8" />
                     </div>
                 </div>
             </div>
