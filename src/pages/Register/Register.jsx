@@ -3,8 +3,62 @@ import { RiLockPasswordLine } from "react-icons/ri";
 import { AiOutlineEye } from "react-icons/ai";
 import { FaFacebookF, FaApple } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import { NavLink, useNavigate } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
+import { toast } from "react-hot-toast";
 
 const Register = () => {
+
+    const { createUser, updateUserProfile, loading, setLoading, signInWithGoogle } = useAuth()
+    const navigate = useNavigate();
+
+    const handleRegister = async (e) => {
+
+
+        e.preventDefault();
+
+        const name = e.target.name.value;
+        const email = e.target.email.value;
+        const photo = e.target.photo.value;
+        const password = e.target.password.value;
+        console.log('Name:', name, 'Photo:', photo, 'Email: ', email, 'Password: ', password)
+
+        try {
+            setLoading(true)
+
+            // 1️⃣ create user
+            const result = await createUser(email, password)
+
+            // 2️⃣ update profile
+            await updateUserProfile(name, photo)
+
+            // 3️⃣ toast success
+            toast.success('Registration Successful.')
+
+            // 4️⃣ reset form & navigate
+            e.target.reset()
+            navigate('/')
+        } catch (error) {
+            console.log(error.message)
+            toast.error(error.message)
+        } finally {
+            setLoading(false) // ✅ ensure loading ends
+        }
+
+    }
+    // handle Google Signin
+    const handleGoogleSignIn = async () => {
+        try {
+            const result = await signInWithGoogle(); // must return result
+            if (result?.user) {
+                toast.success("Login Successful");
+                navigate("/");
+            }
+        } catch (error) {
+            toast.error(error.message);
+        }
+    };
+
     return (
         <div className="min-h-screen w-full bg-gradient-to-b from-teal-300 to-white flex flex-col">
 
@@ -13,12 +67,17 @@ const Register = () => {
                 <h1 className="text-white font-bold text-2xl">LOGO</h1>
 
                 <div className="hidden sm:flex gap-3">
-                    <button className="px-5 py-2 border border-white rounded-full text-white text-sm">
-                        Login
-                    </button>
-                    <button className="px-5 py-2 border border-white rounded-full text-white text-sm">
-                        Sign Up
-                    </button>
+                    <NavLink to="/login">
+                        <button className="px-5 py-2 border border-white rounded-full text-white text-sm">
+                            Login
+                        </button>
+                    </NavLink>
+
+                    <NavLink to="/register">
+                        <button className="px-5 py-2 border border-white rounded-full text-white text-sm">
+                            Sign Up
+                        </button>
+                    </NavLink>
                 </div>
             </div>
 
@@ -37,13 +96,14 @@ const Register = () => {
                     </p>
 
                     {/* FORM */}
-                    <form className="space-y-3">
+                    <form className="space-y-3" onSubmit={handleRegister}>
 
                         {/* Name */}
                         <div className="bg-white rounded-xl px-3 py-3 flex items-center gap-2 border">
                             <MdPerson className="text-gray-600 text-xl" />
                             <input
                                 type="text"
+                                name="name"
                                 placeholder="Full Name"
                                 className="w-full outline-none text-sm"
                                 required
@@ -55,21 +115,39 @@ const Register = () => {
                             <MdEmail className="text-gray-600 text-xl" />
                             <input
                                 type="email"
+                                name="email"
                                 placeholder="Email"
                                 className="w-full outline-none text-sm"
                                 required
                             />
                         </div>
 
+                        
+
+                        {/* Photo */}
+                        <div className="bg-white rounded-xl px-3 py-3 flex items-center gap-2 border">
+                            <MdEmail className="text-gray-600 text-xl" />
+                            <input
+                                type="text"
+                                name="photo"
+                                placeholder="Photo URL"
+                                className="w-full outline-none text-sm"
+                                required
+                            />
+                        </div>
+
+
                         {/* Password */}
                         <div className="bg-white rounded-xl px-3 py-3 flex items-center gap-2 border">
                             <RiLockPasswordLine className="text-gray-600 text-xl" />
                             <input
                                 type="password"
+                                name="password"
                                 placeholder="Password"
                                 className="w-full outline-none text-sm"
                                 required
                             />
+
                             <AiOutlineEye className="text-gray-600 text-xl cursor-pointer" />
                         </div>
 
@@ -99,7 +177,7 @@ const Register = () => {
                             <FaApple size={24} />
                         </button>
 
-                        <button className="w-28 h-12 bg-white rounded-xl border flex items-center justify-center">
+                        <button onClick={handleGoogleSignIn} className="w-28 h-12 bg-white rounded-xl border flex items-center justify-center">
                             <FcGoogle size={26} />
                         </button>
 

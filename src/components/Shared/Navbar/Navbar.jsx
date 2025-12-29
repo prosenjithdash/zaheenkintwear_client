@@ -62,7 +62,7 @@ const Navbar = () => {
 
                     {/* Logo */}
                     <div className="flex items-center gap-2">
-                        <img src="/logo.png" alt="logo" className="h-10" />
+                        <img src="/src/assets/zk-logo.png" alt="logo" className="h-10" />
                     </div>
 
                     {/* Desktop Menu */}
