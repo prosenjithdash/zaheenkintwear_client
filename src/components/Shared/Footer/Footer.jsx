@@ -1,3 +1,6 @@
+import logo from "../../../assets/logo/zk-logo.png";
+
+
 import visa from "../../../assets/payment-logo/visa.png";
 import mastercard from "../../../assets/payment-logo/mastercard.png";
 import nogod from "../../../assets/payment-logo/nogod.png";
@@ -36,7 +39,7 @@ const Footer = () => {
 
                     {/* Left part of footer */}
                     <div>
-                        <img src="https://ibb.co.com/7dFJ7jD1" alt="Company Logo" className="h-10 mb-4" />
+                        <img src={logo} alt="Company Logo" className="h-10 mb-4" />
 
                         <div className="flex gap-3 text-sm text-gray-600 mb-3">
                             <FaMapMarkerAlt className="mt-1 text-gray-500" />

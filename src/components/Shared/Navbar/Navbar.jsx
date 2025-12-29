@@ -1,3 +1,5 @@
+import logo from "../../../assets/logo/zk-logo.png";
+
 import { useState, useContext } from "react";
 import {
     FaFacebookF,
@@ -65,7 +67,7 @@ const Navbar = () => {
 
                     {/* Logo */}
                     <div className="flex items-center gap-2">
-                        <img src="https://ibb.co.com/7dFJ7jD1" alt="logo" className="h-10" />
+                        <img src={logo} alt="logo" className="h-10" />
                     </div>
 
                     {/* Desktop Menu */}
