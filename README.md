@@ -6,7 +6,7 @@ It is built with **React JS** and fully integrated with **Firebase Authenticatio
 ---
 
 ## 🚀 Live Demo
-🔗 Frontend: 
+🔗 Frontend: https://zaheenkintwear-client.vercel.app
 
 ---
 
