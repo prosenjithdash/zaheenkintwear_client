@@ -1,3 +1,23 @@
+import visa from "../../../assets/payment-logo/visa.png";
+import mastercard from "../../../assets/payment-logo/mastercard.png";
+import nogod from "../../../assets/payment-logo/nogod.png";
+import bkash from "../../../assets/payment-logo/bkash.png";
+import roket from "../../../assets/payment-logo/roket.png";
+import upay from "../../../assets/payment-logo/upay.jpg";
+import siorcash from "../../../assets/payment-logo/siorcash.jpg";
+import taptap from "../../../assets/payment-logo/taptap.png";
+import cell from "../../../assets/payment-logo/cell.png";
+import duch from "../../../assets/payment-logo/duch.png";
+import city from "../../../assets/payment-logo/citybank.png";
+import islamibank from "../../../assets/payment-logo/islamibank.png";
+import brack from "../../../assets/payment-logo/brack.png";
+import ucb from "../../../assets/payment-logo/ucb.png";
+
+
+
+
+
+
 import {
     FaFacebookF,
     FaTwitter,
@@ -71,21 +91,21 @@ const Footer = () => {
                     </h3>
 
                     <div className="flex flex-wrap gap-10">
-                        <img src="https://ibb.co.com/LdwM7Ccc" alt="Visa" className="h-8" />
-                        <img src="https://ibb.co.com/SDTLpsgr" alt="Mastercard" className="h-8" />
-                        <img src="https://ibb.co.com/yn4cnm5d" alt="nogod" className="h-8" />
-                        <img src="https://ibb.co.com/p655Q460" alt="Bkash" className="h-8" />
-                        <img src="https://ibb.co.com/tpG6j918" alt="Rocket" className="h-8" />
+                        <img src={visa} alt="Visa" className="h-8" />
+                        <img src={mastercard} alt="Mastercard" className="h-8" />
+                        <img src={nogod} alt="nogod" className="h-8" />
+                        <img src={bkash} alt="Bkash" className="h-8" />
+                        <img src={roket} alt="Rocket" className="h-8" />
 
-                        <img src="https://ibb.co.com/jv2nLY7J" alt="Upay" className="h-8" />
-                        <img src="https://ibb.co.com/0yGwzPCm" alt="Siorcash" className="h-8" />
-                        <img src="https://ibb.co.com/LVbHTj9" alt="Tap" className="h-8" />
-                        <img src="https://ibb.co.com/spPzMFvJ" alt="Cell" className="h-8" />
-                        <img src="https://ibb.co.com/FL3bgTb3" alt="DuchBangla Bank" className="h-8" />
-                        <img src="https://ibb.co.com/BHS0GvTC" alt="City Bank" className="h-8" />
-                        <img src="https://ibb.co.com/rRVbvQws" alt="Islami Bank" className="h-8" />
-                        <img src="https://ibb.co.com/QvvqxfgH" alt="Brack" className="h-8" />
-                        <img src="https://ibb.co.com/Q77x81fP" alt="UCB" className="h-8" />
+                        <img src={upay} alt="Upay" className="h-8" />
+                        <img src={siorcash} alt="Siorcash" className="h-8" />
+                        <img src={taptap} alt="Tap" className="h-8" />
+                        <img src={cell} alt="Cell" className="h-8" />
+                        <img src={duch} alt="DuchBangla Bank" className="h-8" />
+                        <img src={city} alt="City Bank" className="h-8" />
+                        <img src={islamibank} alt="Islami Bank" className="h-8" />
+                        <img src={brack} alt="Brack" className="h-8" />
+                        <img src={ucb} alt="UCB" className="h-8" />
                     </div>
                 </div>
             </div>
