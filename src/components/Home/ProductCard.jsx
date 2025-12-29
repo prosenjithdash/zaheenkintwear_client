@@ -1,12 +1,15 @@
-
 import {
     FaRegHeart,
     FaRegEye,
     FaShareAlt,
     FaShoppingCart
 } from "react-icons/fa";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
 const ProductCard = ({ product }) => {
+    const { addToCart } = useContext(CartContext);
+
     return (
         <div className="group bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
             {/* Image */}
@@ -19,7 +22,6 @@ const ProductCard = ({ product }) => {
                     />
                 </div>
 
-                {/* Hover Icons */}
                 <div className="absolute top-6 right-6 flex flex-col gap-3 opacity-0 group-hover:opacity-100 transition">
                     <button className="bg-white p-2 rounded-full shadow text-orange-600">
                         <FaRegHeart size={16} />
@@ -31,7 +33,6 @@ const ProductCard = ({ product }) => {
                         <FaShareAlt size={16} />
                     </button>
                 </div>
-
             </div>
 
             {/* Info */}
@@ -45,10 +46,14 @@ const ProductCard = ({ product }) => {
                 </p>
 
                 <div className="flex gap-3">
-                    <button className="w-1/2 bg-teal-100 text-teal-700 py-2 rounded-md text-sm flex items-center justify-center gap-2">
+                    <button
+                        onClick={() => addToCart(product)}
+                        className="w-1/2 bg-teal-100 text-teal-700 py-2 rounded-md text-sm flex items-center justify-center gap-2"
+                    >
                         <FaShoppingCart size={14} />
                         Add To Cart
                     </button>
+
                     <button className="w-1/2 bg-teal-500 text-white py-2 rounded-md text-sm">
                         Buy Now
                     </button>
