@@ -1,5 +1,10 @@
 
-import { FaHeart, FaEye, FaShareAlt, FaShoppingCart } from "react-icons/fa";
+import {
+    FaRegHeart,
+    FaRegEye,
+    FaShareAlt,
+    FaShoppingCart
+} from "react-icons/fa";
 
 const ProductCard = ({ product }) => {
     return (
@@ -16,25 +21,26 @@ const ProductCard = ({ product }) => {
 
                 {/* Hover Icons */}
                 <div className="absolute top-6 right-6 flex flex-col gap-3 opacity-0 group-hover:opacity-100 transition">
-                    <button className="bg-white p-2 rounded-full shadow text-red-500">
-                        <FaHeart size={14} />
+                    <button className="bg-white p-2 rounded-full shadow text-orange-600">
+                        <FaRegHeart size={16} />
                     </button>
-                    <button className="bg-white p-2 rounded-full shadow">
-                        <FaEye size={14} />
+                    <button className="bg-white p-2 rounded-full shadow text-orange-600">
+                        <FaRegEye size={16} />
                     </button>
-                    <button className="bg-white p-2 rounded-full shadow">
-                        <FaShareAlt size={14} />
+                    <button className="bg-white p-2 rounded-full shadow text-orange-600">
+                        <FaShareAlt size={16} />
                     </button>
                 </div>
+
             </div>
 
             {/* Info */}
             <div className="px-4 pb-4">
-                <h3 className="text-sm font-semibold mb-2">
+                <h3 className="text-lg font-semibold mb-2">
                     {product.name}
                 </h3>
 
-                <p className="text-sm mb-4">
+                <p className="text-2xl font-semibold mb-4">
                     ৳ {product.price.min} — ৳ {product.price.max}
                 </p>
 
