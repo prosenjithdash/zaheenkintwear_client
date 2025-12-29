@@ -1,31 +1,34 @@
+// CategoryCard.jsx
 const CategoryCard = ({ step, name, icon, description }) => {
     return (
         <div
             className="
-        relative cursor-pointer
-        bg-white
-        rounded-xl
-        shadow-md
-        px-6 py-7
-        transition-all duration-300
-        hover:bg-[#07B4B0]
-        hover:text-white
-        w-full h-full
-      "
+                group
+                relative cursor-pointer
+                bg-white
+                rounded-xl
+                shadow-md
+                px-7 py-14
+                transition-all duration-300
+                hover:bg-[#07B4B0]
+                hover:text-white
+            "
         >
-            {/* step circle */}
+            {/* step badge */}
             <div
                 className="
-          absolute -top-4 left-1/2 -translate-x-1/2
-          w-9 h-9 rounded-full
-          bg-white
-          shadow-md
-          flex items-center justify-center
-          font-semibold
-          transition-all duration-300
-          group-hover:bg-orange-500
-          
-        "
+                    absolute -top-4 left-1/2 -translate-x-1/2
+                    w-9 h-9 rounded-full
+                    bg-white
+                    shadow-md
+                    flex items-center justify-center
+                    font-semibold
+                    transition-all duration-300
+
+                    /* active state when hovered */
+                    group-hover:bg-[#FF5B2E]
+                    group-hover:text-white
+                "
             >
                 {step}
             </div>
@@ -35,8 +38,15 @@ const CategoryCard = ({ step, name, icon, description }) => {
                 <img
                     src={icon}
                     alt={name}
-                    className="w-10 h-10 object-contain"
-                />
+                    className="
+                    w-14 h-14       
+                    object-contain
+                    transition-all duration-300
+                    group-hover:brightness-200
+                    group-hover:invert
+                    group-hover:scale-110  
+                "
+                            />
             </div>
 
             {/* title */}
@@ -45,7 +55,7 @@ const CategoryCard = ({ step, name, icon, description }) => {
             </h3>
 
             {/* description */}
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-sm leading-relaxed group-hover:text-white">
                 {description}
             </p>
         </div>

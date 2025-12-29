@@ -28,12 +28,12 @@ const categoriesData = [
         name: "Checking",
         icon: "/src/assets/categoryIcons/checking.png",
         description: "Going through each clothing piece to ensure supreme quality standards are met"
-    },
-    {
-        name: "Package",
-        icon: "/src/assets/categoryIcons/package.png",
-        description: "Folding and packing with the utmost care"
     }
+    // {
+    //     name: "Package",
+    //     icon: "/src/assets/categoryIcons/package.png",
+    //     description: "Folding and packing with the utmost care"
+    // }
 ];
 
 export default categoriesData;
