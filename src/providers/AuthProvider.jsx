@@ -19,9 +19,31 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
 
+    const createUser = (email, password) => {
+        setLoading(true)
+        return createUserWithEmailAndPassword(auth, email, password)
+    }
+
+    const signIn = (email, password) => {
+        setLoading(true)
+        return signInWithEmailAndPassword(auth, email, password)
+    }
+
     const signInWithGoogle = () => {
         setLoading(true)
         return signInWithPopup(auth, googleProvider)
+    }
+
+    const resetPassword = email => {
+        setLoading(true)
+        return sendPasswordResetEmail(auth, email)
+    }
+
+    const updateUserProfile = (name, photo) => {
+        return updateProfile(auth.currentUser, {
+            displayName: name,
+            photoURL: photo,
+        })
     }
 
     // Firebase Auth State Change Listener
@@ -39,7 +61,11 @@ const AuthProvider = ({ children }) => {
         user,
         loading,
         setLoading,
+        createUser,
         signInWithGoogle,
+        signIn,
+        resetPassword,
+        updateUserProfile,
     }
     return (
         <AuthContext.Provider
